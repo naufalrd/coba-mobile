@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="position-fixed w-100 vh-100 bg-light" style="z-index: -1;"></div>
+    <div class="container-fluid m-0 p-0" style="text-align:-webkit-center;overflow-x: hidden;">
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 bg-white vh-100 position-relative">
+
+            <!-- button logout -->
+            <div class="position-absolute top-0 bg-light py-2 px-3 rounded-circle shadow end-0 d-none">
+                <i class="bi bi-box-arrow-left text-danger fs-4"></i>
+            </div>
+            <!-- navbar -->
+            <div class="row pt-3">
+                <div class="col-8 ps-5 text-start align-self-center">
+                    <p class="fs-5 mb-0 fw-bold">Profile</p>
+                </div>
+                <div class="col-4 text-end pe-5 align-self-center">
+                    <i class="bi bi-person fs-3"></i>
+                </div>
+            </div>
+            <!-- pengobatan terakhir -->
+            <div class="row mt-5 px-3 text-start">
+                <div class="cards">
+                    <form class="edit-profile">
+                        <div class="card-body bg-white" style="border-radius: 23px; padding: 1.5rem 1.5rem;">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+
+                                        <input type="hidden" id="nomor_rekammedis">
+                                        <input type="hidden" id="no_identitas_pasien">
+                                        <input type="hidden" id="bahasa">
+                                        <input type="hidden" id="gol_darah">
+                                        <input type="hidden" id="jenis_kelamin">
+                                        <input type="hidden" id="wni_wna">
+                                        <input type="hidden" id="id_klinik">
+                                        <input type="hidden" id="nama_wali">
+                                        <input type="hidden" id="hubungan">
+                                        <input type="hidden" id="no_telp_wali">
+                                        <label for="basicinput">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama_pasien" placeholder="nama">
+                                        <br>
+                                        <label for="basicinput">Alamat</label>
+                                        <textarea class="form-control" id="alamat" placeholder="alamat">alamat</textarea>
+                                        <br>
+                                        <label for="basicinput">Tanggal Lahir</label>
+                                        <input type="date" class="form-control" id="tgllahir">
+                                        <br>
+                                        <label for="basicinput">No. Handphone</label>
+                                        <input type="text" class="form-control" id="nohp" placeholder="08xxx">
+
+                                    </div>
+                                </div>
+                                <!-- <div class="col-6 col-md-4 text-center">
+                                        <i width="2em" height="2em" viewBox="0 0 16 16" class="fas fa-hospital-user fs-3" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                        </i>
+                                    </div> -->
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="buttons text-center">
+                                <button class="btn btn-primary rounded-pill btn-lg">Simpan</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="position-fixed w-100 bottom-0 " style="text-align: center;text-align: -webkit-center;overflow-x: hidden; ">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 text-center pb-2 px-2 ">
+                <nav class="p-0 navbar navbar-bottom navbar-dark bg-primary navbar-expand " style="border-radius: 30px; filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.25)); ">
+                    <ul class="navbar-nav nav-justified w-100 ">
+                        <li class="nav-item ">
+                            <a href="/ " class="nav-link ">
+                                <i width="2em " height="2em " viewBox="0 0 16 16 " class="las la-home fs-3 " fill="currentColor ">
+                <path fill-rule="evenodd " d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z " />
+                <path fill-rule="evenodd " d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z " />
+            </i>
+                                <span class="small d-block ">Beranda</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="riwayat.html " class="nav-link  ">
+                                <i width="2em " height="2em " viewBox="0 0 16 16 " class="las la-notes-medical fs-3 " fill="currentColor ">
+                <path fill-rule="evenodd " d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z " />
+                <path fill-rule="evenodd " d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z " />
+            </i>
+                                <span class="small d-block ">Riwayat</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="card.html " class="nav-link ">
+                                <i width="2em " height="2em " viewBox="0 0 16 16 " class="las la-id-card fs-3 " fill="currentColor ">
+                <path fill-rule="evenodd " d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z " />
+                <path fill-rule="evenodd " d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z " />
+            </i>
+                                <span class="small d-block ">Kartu</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="notifikasi.html " class="nav-link ">
+                                <i width="2em " height="2em " viewBox="0 0 16 16 " class="las la-bell fs-3 " fill="currentColor ">
+                <path fill-rule="evenodd " d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z " />
+                <path fill-rule="evenodd " d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z " />
+            </i>
+                                <span class="small d-block ">Notifikasi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="profile.html " class="nav-link active">
+                                <i width="2em " height="2em " viewBox="0 0 16 16 " class="las la-user fs-3 " fill="currentColor ">
+                <path fill-rule="evenodd " d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z " />
+                <path fill-rule="evenodd " d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z " />
+            </i>
+                                <span class="small d-block ">Profil</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
